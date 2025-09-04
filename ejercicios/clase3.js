@@ -120,3 +120,91 @@ console.log(parImpar(9))
 //EJERCICIO 10
 console.log("\nEJERCICIO 10")
 
+dia = 3
+switch (dia){
+    case 0 :
+        console.log("Domingo")
+    break;
+    case 1 : 
+        console.log("Lunes")
+    break;
+    case 2 :
+        console.log("Martes")
+    break;
+    case 3 :
+        console.log("Miercoles")
+    break;
+    case 4 :
+        console.log("Jueves")
+    break;
+    case 5 :
+        console.log("Viernes")
+    break;
+    case 6 :
+        console.log("Sábado")
+    break;
+//¿? No entiendo para que es ni como funciona (new Date().getDay())
+}
+
+
+//EJERCICIO 11
+console.log("\nEJERCICIO 11")
+
+function suma(n) {
+    if (n === 1) {
+        return 1;
+    } else {
+        return n + suma(n - 1);
+    }
+}
+ console.log (suma(4))
+ //¿? suma (n-1)?
+
+
+//EJERCICIO 12
+console.log("\nEJERCICIO 12") 
+
+function esPasswordValida(p) {
+    let largoOk = p.length >= 8;
+    let numeroOk = /[0-9]/.test(p);
+    let mayusOk = /[A-Z]/.test(p);
+    return largoOk && numeroOk && mayusOk;
+}
+
+console.log (esPasswordValida("Hola"))
+console.log(esPasswordValida("HOLA1234"))
+
+
+//EJERCICIO 13
+console.log("\nEJERCICIO 13") 
+
+for (let i = 0; i<=20; i++){
+    if (i%2==0){
+        console.log (i)
+    }
+}
+
+
+//EJERCICIO 14
+console.log("\nEJERCICIO 14") 
+
+let peliculas = ["El Padrino", "El Rey León", "Cenicienta", "Blanca Nieves", "Jurassic Park"]
+
+for (i=0;i<peliculas.length;i++){
+    console.log(i+1+"."+peliculas[i])
+}
+
+
+//EJERCICIO 15
+console.log("\nEJERCICIO 15") 
+
+let serie = [1,2,3,4,5,6,7,8,9];
+
+serie.forEach((numero, indice) => {
+    if (numero % 2 === 0) {
+        console.log(numero + " es par");
+    } else {
+        console.log(numero + " es impar");
+    }
+});
+
