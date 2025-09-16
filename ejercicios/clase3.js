@@ -208,3 +208,7 @@ serie.forEach((numero, indice) => {
     }
 });
 
+
+//EJERCICIO 16
+console.log("\nEJERCICIO 16")
+
